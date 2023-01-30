@@ -1,0 +1,1 @@
+PS1=" \[$Blue1\]\h\[$Blue2\] \W\[$Blue3\] ::\[$TURNOFF\] "
