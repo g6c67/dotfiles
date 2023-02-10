@@ -1,18 +1,21 @@
 # dotfiles
-Works for pop_os and Fedora 37.
+
+![dekstop](lol.png)
+*Works on pop_os and Fedora 37.*
+
 Configuration for:
 - tmux.
-- i3 & rofi.
-- bash configuration.
-- emacs configuration.
+- bash.
+- emacs.
+  - NOTE: init file -> Frames,windows,buffer -> Change startup screen. Not replicable
 - Bash scripts.
 
 ## Setterscript
-Script that automatically sets up software.
+Script that automatically sets up software config.
 
 ### Use
 - set everything: `$ ./setterscript all`
 - set bashrc: `$ ./setterscript bash`
 - set emacs: `$ ./setterscript emac`
-- set i3 & rofi: `$ ./setterscript i3`
 - set tmux: `$ ./setterscript tmux`
+- set gdm3: `$ ./setterscript gdm3mon`

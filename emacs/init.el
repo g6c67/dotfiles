@@ -8,16 +8,23 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa". "https://melpa.org/packages/"))
 
-;;;;;;;;;;;;;;;;;;;;;
-;; Frames, windows ;;
-;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Frames, windows, buffers ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Run fullscreen
 ;(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Change startup screen
-'(initial-buffer-choice "~/.emacs.d/custom-plugins/main-menu.el")
+;; WARNIN': this thing is not replicable, plugin in development
+;; 1. Disable creation of splash-screen
+;; 2. Open this file
+;; 3. Switch to the buffer
+
+(setq inhibit-startup-screen t)
+(setq start-buffer (find-file "~/Documents/second-brain/projects.org"))
+(switch-to-buffer start-buffer)
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; custom variables ;;
@@ -35,5 +42,6 @@
 ;; Theming ;;
 ;;;;;;;;;;;;;
 
-(load-theme 'atom-one-dark)
+(load-theme 'adwaita-dark)
 ;;(set-frame-font "Inconsolata 12" nil t)
+

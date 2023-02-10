@@ -2,11 +2,12 @@
 
 # Clearing the screen
 clear
-echo "#######"
-echo "#######"
-echo "#######"
-echo "#######"
-echo -e "\n"
+echo ""
+echo " ########"
+echo " ########"
+echo " ########"
+echo " ########"
+echo ""
 
 # Script that sets up software
 
@@ -45,7 +46,7 @@ seti3() {
 settmux() {
     # tmux config
     echo -e -n "\033[01;32m set tmux config file: \033[00m"
-    cp ~/$dotPath/tmux.conf ~/.tmux.conf 
+    cp $dotPath/tmux.conf ~/.tmux.conf 
     echo "Done."
 
 }
@@ -96,6 +97,7 @@ case $1 in
 	echo "bash    : set up bash config"
 	echo "emac    : set up emacs config"
 	echo "i3      : set up i3 and rofi configuration"
+	echo "        NOTE: In development"
 	echo "tmux    : set up tmux config"
 	echo "gdm3mon : set gdm3 monitor configuration"
 	echo "        NOTES"

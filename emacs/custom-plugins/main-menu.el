@@ -8,11 +8,11 @@
 
 ;; ART
 ;;
-;; 000000000
-;; 0XXXXXXX0
-;; 0XXXXXXX0
-;; 0XXXXXXX0
-;; 000000000
+;; XXXXXXXXXX
+;; XXXXXXXXXX
+;; XXXXXXXXXX
+;; XXXXXXXXXX
+;; XXXXXXXXXX
 ;;
 ;; This is the thing that I want to draw
 
@@ -20,11 +20,6 @@
 ;;           SECTION: ART              ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(message '('000000000
-0XXXXXXX0
-0XXXXXXX0
-0XXXXXXX0
-000000000)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; SECTION: LIST OF KEYBOARD SHORTCUTS ;;
